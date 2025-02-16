@@ -16,6 +16,11 @@ export default defineConfig(({ mode }) => {
                 threshold: 1024,
             }),
         ],
+        server: {
+            allowedHosts: [
+                'stable-true-colt.ngrok-free.app',
+            ],
+        },
         clearScreen: false,
         envDir,
         define: {
@@ -37,3 +42,4 @@ export default defineConfig(({ mode }) => {
         },
     };
 });
+
